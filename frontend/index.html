@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
 </head>
 <body>
-    
+    <div id="app-vue">
+        <div>
+            <h4>Nom</h4>
+            <input class="add-user" type="text" v-model="userName" @keyup.enter="addUser" />
+            <h4>Prenom</h4>
+            <input class="add-user" type="text" v-model="userLastname" @keyup.enter="addUser" />
+            <p v-if="submit">Ajouter...</p>
+        </div>
+    <script src="app.js"></script>
 </body>
 </html>
